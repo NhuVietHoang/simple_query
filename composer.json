@@ -1,0 +1,21 @@
+{
+    "name": "nvh/simple_query_builder",
+    "description": "simple query builder",
+
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Viethoang\\Query\\": "src/",
+            "Viethoang\\Query\\Test\\": "test/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nvh",
+            "email": "viethoangnhu@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-pdo": "*"
+    }
+}
