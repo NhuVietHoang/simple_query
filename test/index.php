@@ -27,6 +27,7 @@ $data = [
 // $test = categories::select(['id','name'])->get();
 
 
+
 dd($test);
 
 

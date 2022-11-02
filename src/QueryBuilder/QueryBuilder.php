@@ -212,18 +212,6 @@ class QueryBuilder
             return false;
         }
     }
-    public function find(array $search)
-    {
-        try {
-            $key = array_keys($search)[0];
-            $run = $this->conn->prepare("SELECT * FROM " . self::$table . " WHERE  {$key} =:{$key} ");
-            $run->execute($search);
-            return $run->fetch(\PDO::FETCH_ASSOC);
-        } catch (\PDOException $e) {
-            echo " have some errors";
-            file_put_contents('PDOErrors.txt', $e->getMessage() . ' at time : ' . date('d/m/Y -H:m:s', time()) . "\n", FILE_APPEND);
-        }
-    }
 
     public function getPrepareString()
     {

@@ -45,13 +45,6 @@ abstract class Model extends Data
         return $this;
 
     }
-
-    public function prefind(array $search)
-    {
-         $result = $this->query->find($search);
-        return $result === null ? $result : static::collection([$result])  ;
-    }
-
     public function preget()
     {
         $result = $this->query->get();

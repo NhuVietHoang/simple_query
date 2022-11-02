@@ -22,3 +22,9 @@ SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kinh.mat.products' do
 SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kinh.mat.products' doesn't exist at 02mY 09:11:06
 SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kinh.mat.products' doesn't exist at 02mY 09:11:42
 SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kinh.mat.products' doesn't exist at 02mY 09:11:15
+SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens at time : 02/11/2022 -10:11:20
+SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens at time : 02/11/2022 -10:11:46
+SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens at time : 02/11/2022 -10:11:58
+SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens at time : 02/11/2022 -10:11:10
+SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens at time : 02/11/2022 -10:11:41
+SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens at time : 02/11/2022 -10:11:51
