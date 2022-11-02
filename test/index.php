@@ -1,5 +1,7 @@
 <?php
 require  "../vendor/autoload.php";
+
+
 use Viethoang\Query\Config\Connection;
 use Viethoang\Query\QueryBuilder\QueryBuilder as DB;
 use Viethoang\Query\Test\Categories;
@@ -14,10 +16,19 @@ $config = [
 ];
 Connection::$config = $config;
 $data = [
-    'name'=> 'test2',
+    'name'=> 'test10',
     ];
-$test = categories::find(['id'=>2]);
-echo '<pre>';
-var_dump($test);
-echo '</pre>';
+    // categories::create($data);
+// $test = categories::get();
+// $test = categories::where(['id','>','1'])->count();
+// $test = categories::limit('2','3')->get();
+
+// $test = categories::where(['id','>','1'])->first();
+// $test = categories::select(['id','name'])->get();
+
+
+dd($test);
+
+
+
 

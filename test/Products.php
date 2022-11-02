@@ -1,9 +1,9 @@
 <?php
 namespace  Viethoang\Query\Test;
 use Viethoang\Query\Model;
-class  Categories extends  Model
+class  Products extends  Model
 {
-    protected $table = "categories";
+    protected $table = "products";
 
     
 }

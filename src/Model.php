@@ -66,32 +66,12 @@ abstract class Model extends Data
         $this->query->limit($limit, $offset);
         return $this;
     }
-    public  function  orderBy(array $fields, $mode = 'asc'){
-        $this->query->orderBy($fields,$mode);
-        return $this;
-    }
     public  function  precount(){
         return $this->query->count();
     }
-
-    public  function  preleftjoin(string $tableJoin, array $condition){
-        $this->query->leftjoin($tableJoin,$condition);
-        return $this;
-
-    }
-    public  function  prerightjoin(string $tableJoin, array $condition){
-        $this->query->rightjoin($tableJoin,$condition);
-        return $this;
-    }
-
     public function getstr()
     {
         return $this->query->getPrepareString();
-    }
-    public  function  prejoin($tableJoin, array $condition){
-        $this->query->join($tableJoin,$condition);
-        return $this;
-
     }
     public  function  preinsert( array $data){
         $this->query->insert($data);

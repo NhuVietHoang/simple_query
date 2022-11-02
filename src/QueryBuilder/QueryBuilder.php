@@ -74,20 +74,6 @@ class QueryBuilder
         return $this;
     }
 
-
-    public function orderBy(array $fields, $mode = 'asc')
-    {
-        $mode = strtoupper($mode);
-        $stringField = implode(', ', $fields);
-
-        if ($mode == "ASC") {
-            $this->orderBy = " ORDER BY " . $stringField . " ASC ";
-        } else {
-            $this->orderBy = " ORDER BY " . $stringField . " DESC ";
-        }
-        return $this;
-    }
-
     public function limit(int $limit, int $offset = 0)
     {
         $this->limit = " LIMIT {$limit}  OFFSET {$offset}";
@@ -226,25 +212,6 @@ class QueryBuilder
             return false;
         }
     }
-
-    public function join($tableJoin, array $condition)
-    {
-        $this->join = " INNER JOIN {$tableJoin} ON " . $condition[0] . " {$condition[1]} " . $condition[2];
-        return $this;
-    }
-
-    public function leftjoin(string $tableJoin, array $condition)
-    {
-        $this->join = " LEFT JOIN {$tableJoin} ON " . $condition[0] . " {$condition[1]} " . $condition[2];
-        return $this;
-    }
-
-    public function rightjoin(string $tableJoin, array $condition)
-    {
-        $this->join = " RIGHT JOIN {$tableJoin} ON " . $condition[0] . " {$condition[1]} " . $condition[2];
-        return $this;
-    }
-
     public function find(array $search)
     {
         try {
